@@ -1,0 +1,4 @@
+dockerTag: itielshwartz/microservice-using-helm:part-6-backend-with-redis
+redis:
+  usePassword: false
+  fullnameOverride: redis

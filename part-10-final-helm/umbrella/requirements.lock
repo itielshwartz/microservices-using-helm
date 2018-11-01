@@ -1,0 +1,9 @@
+dependencies:
+- name: dal-chart
+  repository: file://../db_service_wrapper/dal-chart
+  version: 1.0.0
+- name: quotes-backend-chart
+  repository: file://../backend/quotes-backend-chart
+  version: 1.0.0
+digest: sha256:e168de963970ce1cc4fc2aebc9c8bfb6e9a98d36ea58745d23666e9e8a7bceea
+generated: 2018-10-30T23:00:45.305590291+02:00

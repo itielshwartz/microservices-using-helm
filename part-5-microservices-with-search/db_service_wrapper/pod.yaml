@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dal
+  labels:
+    name: dal
+spec:
+  containers:
+  - name: dal
+    image: itielshwartz/microservice-using-helm:part-5-dal
+    ports:
+    - containerPort: 5000

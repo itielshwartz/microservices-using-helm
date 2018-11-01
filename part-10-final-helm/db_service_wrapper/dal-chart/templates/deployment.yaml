@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dal
+  labels:
+    name: dal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: dal
+  template:
+    metadata:
+      labels:
+        name: dal
+    spec:
+      containers:
+      - name: dal
+        image: {{ .Values.dockerTag }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000

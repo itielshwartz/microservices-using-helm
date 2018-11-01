@@ -1,0 +1,10 @@
+dependencies:
+- name: dal-chart
+  version: "1.0.0"
+  repository: "file://../db_service_wrapper/dal-chart"
+- name: quotes-backend-chart
+  version: "1.0.0"
+  repository: "file://../backend/quotes-backend-chart"
+
+
+
