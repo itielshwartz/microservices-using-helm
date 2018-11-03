@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: main
+  labels:
+    name: main
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: main
+  template:
+    metadata:
+      labels:
+        name: main
+    spec:
+      containers:
+      - name: main
+        image: itielshwartz/microservice-using-helm:part-5-backend
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DAL_URL
+          value: "http://quotes-dal:5000"
